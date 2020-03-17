@@ -319,7 +319,6 @@ public class yorkController {
 	}
 	@FXML
 	protected void setA4Grade(ActionEvent event) {
-		System.out.println("Here");
 		caller(gradePoint4,grade4,3,8,"A");
 	}
 	@FXML
