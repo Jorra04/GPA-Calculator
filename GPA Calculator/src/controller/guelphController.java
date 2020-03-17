@@ -1,6 +1,4 @@
 package controller;
-import model.GPAModel;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -184,7 +182,7 @@ public class guelphController {
 	
 
 	double GPA = 0;
-	GPAModel model1 = new GPAModel();
+	
 	int[] gradePointArray = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	int[] gradeArray = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
