@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class GPACalcController {
+public class yorkController {
 	@FXML
 	private AnchorPane mainPane;
 	@FXML
