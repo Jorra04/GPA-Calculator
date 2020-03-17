@@ -248,7 +248,7 @@ public class startController {
 		} else if (text.equals("Carleton")) {
 			application.Main.stage.setTitle("Carleton GPA Calculator");
 			application.Main.stage.setScene(application.Main.carleton);
-			application.Main.stage.getIcons().add(0, image7);
+			application.Main.stage.getIcons().add(0, image2);
 
 		} else if (text.equals("Laurier")) {
 			application.Main.stage.setTitle("Laurier GPA Calculator");
