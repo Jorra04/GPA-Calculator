@@ -6,6 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SplitMenuButton;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class startController {
 
@@ -54,7 +56,73 @@ public class startController {
 	private MenuItem sheriden;
 
 	public void initialize() {
-
+		Image image1 = new Image(getClass().getResourceAsStream("/images/york.jpg"));
+		ImageView iv1 = new ImageView(image1);
+		iv1.setFitWidth(15);
+		iv1.setFitHeight(15);
+		york.setGraphic(iv1);
+		
+		Image image2 = new Image(getClass().getResourceAsStream("/images/carleton.png"));
+		ImageView iv2 = new ImageView(image2);
+		iv2.setFitWidth(15);
+		iv2.setFitHeight(15);
+		carleton.setGraphic(iv2);
+		Image image3 = new Image(getClass().getResourceAsStream("/images/guelph.png"));
+		ImageView iv3 = new ImageView(image3);
+		iv3.setFitWidth(15);
+		iv3.setFitHeight(15);
+		guelph.setGraphic(iv3);
+		Image image4 = new Image(getClass().getResourceAsStream("/images/Lakehead.png"));
+		ImageView iv4 = new ImageView(image4);
+		iv4.setFitWidth(15);
+		iv4.setFitHeight(15);
+		lakehead.setGraphic(iv4);
+		Image image5 = new Image(getClass().getResourceAsStream("/images/laurier.png"));
+		ImageView iv5 = new ImageView(image5);
+		iv5.setFitWidth(15);
+		iv5.setFitHeight(15);
+		Laurier.setGraphic(iv5);
+		Image image6 = new Image(getClass().getResourceAsStream("/images/mcgill.png"));
+		ImageView iv6 = new ImageView(image6);
+		iv6.setFitWidth(15);
+		iv6.setFitHeight(15);
+		mcGill.setGraphic(iv6);
+		Image image7 = new Image(getClass().getResourceAsStream("/images/mcmaster.jpg"));
+		ImageView iv7 = new ImageView(image7);
+		iv7.setFitWidth(15);
+		iv7.setFitHeight(15);
+		mcMaster.setGraphic(iv7);
+		Image image8 = new Image(getClass().getResourceAsStream("/images/ottawa.jpeg"));
+		ImageView iv8 = new ImageView(image8);
+		iv8.setFitWidth(15);
+		iv8.setFitHeight(15);
+		ottawa.setGraphic(iv8);
+		Image image9 = new Image(getClass().getResourceAsStream("/images/sheridan.png"));
+		ImageView iv9 = new ImageView(image9);
+		iv9.setFitWidth(15);
+		iv9.setFitHeight(15);
+		sheriden.setGraphic(iv9);
+		Image image10 = new Image(getClass().getResourceAsStream("/images/uoft.png"));
+		ImageView iv10 = new ImageView(image10);
+		iv10.setFitWidth(15);
+		iv10.setFitHeight(15);
+		uOfT.setGraphic(iv10);
+		Image image11 = new Image(getClass().getResourceAsStream("/images/waterloo.png"));
+		ImageView iv11 = new ImageView(image11);
+		iv11.setFitWidth(15);
+		iv11.setFitHeight(15);
+		waterloo.setGraphic(iv11);
+		Image image12 = new Image(getClass().getResourceAsStream("/images/western.png"));
+		ImageView iv12 = new ImageView(image12);
+		iv12.setFitWidth(15);
+		iv12.setFitHeight(15);
+		western.setGraphic(iv12);
+		Image image13 = new Image(getClass().getResourceAsStream("/images/queens.png"));
+		ImageView iv13 = new ImageView(image13);
+		iv13.setFitWidth(15);
+		iv13.setFitHeight(15);
+		Queens.setGraphic(iv13);
+		
 	}
 
 	@FXML
