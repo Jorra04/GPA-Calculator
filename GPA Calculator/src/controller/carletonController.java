@@ -1083,15 +1083,15 @@ public class carletonController {
 			totalCreds+= gradePointArray[i];
 //			System.out.println("GP: " + gradePointArray[i]);
 //			System.out.println(gradeArray[i]);
-			System.out.println(gradePointArray[i] +" * "+ gradeArray[i]);
+//			System.out.println(gradePointArray[i] +" * "+ gradeArray[i]);
 			GradePoint += gradePointArray[i] * gradeArray[i];
-			System.out.println("GP: "+GradePoint);
+//			System.out.println("GP: "+GradePoint);
 
 		}
 		
 //		System.out.println(totalCreds);
-		System.out.println("TotalGradePoint: " + GradePoint);
-		System.out.println("Total credits: "+totalCreds);
+//		System.out.println("TotalGradePoint: " + GradePoint);
+//		System.out.println("Total credits: "+totalCreds);
 		if(totalCreds == 0) {
 			finalGpa.setText(0.0 + "");
 		}
@@ -1159,7 +1159,7 @@ public class carletonController {
 				application.alert.display("Error", "Problem");
 				return;
 			}
-			System.out.println(Double.parseDouble(tf.getText()));
+//			System.out.println(Double.parseDouble(tf.getText()));
 			gradePointArray[index] = Double.parseDouble(tf.getText());
 			gradeArray[index] = grade;
 		}
