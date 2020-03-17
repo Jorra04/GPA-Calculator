@@ -15,7 +15,7 @@ public class Main extends Application {
 		
 		Parent root = FXMLLoader.load(getClass().getResource("/FXMLDocs/GPACalculator.fxml"));
 		   
-	    Scene scene = new Scene(root, 650, 980);
+	    Scene scene = new Scene(root, 581, 610);
 		
 	   
 	
