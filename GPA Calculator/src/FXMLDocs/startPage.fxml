@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.startController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.startController">
    <children>
       <Label layoutX="130.0" layoutY="35.0" prefHeight="68.0" prefWidth="224.0" text="Choose Your School" textAlignment="RIGHT">
          <font>
             <Font name="Bell MT Bold" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="select" layoutX="341.0" layoutY="103.0" mnemonicParsing="false" onAction="#schoolEntered" prefHeight="34.0" prefWidth="104.0" text="Select School" />
-      <SplitMenuButton fx:id="schools" layoutX="130.0" layoutY="112.0" mnemonicParsing="false" text="Schools...">
+      <Button fx:id="select" layoutX="302.0" layoutY="141.0" mnemonicParsing="false" onAction="#schoolEntered" prefHeight="34.0" prefWidth="104.0" text="Select School" />
+      <SplitMenuButton fx:id="schools" layoutX="61.0" layoutY="145.0" mnemonicParsing="false" text="Schools...">
         <items>
           <MenuItem fx:id="york" mnemonicParsing="false" onAction="#york" text="York" />
           <MenuItem fx:id="western" mnemonicParsing="false" onAction="#Western" text="Western" />

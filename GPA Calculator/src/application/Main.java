@@ -57,7 +57,7 @@ public class Main extends Application {
 	    UofT = new Scene(root12, 581, 610);
 	    Laurier = new Scene(root6, 581, 610);
 		
-	    promptWindow = new Scene(root2,581,610);
+	    promptWindow = new Scene(root2,460,290);
 	
 	    primaryStage.setTitle("GPA Calculator");
 	    primaryStage.setScene(promptWindow);

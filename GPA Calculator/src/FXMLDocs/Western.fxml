@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="837.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.yorkController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="837.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.westernController">
   <content>
     <AnchorPane fx:id="mainPane" minHeight="0.0" minWidth="0.0" prefHeight="837.0" prefWidth="555.0">
          <children>
@@ -21,6 +21,7 @@
                   <items>
                     <MenuItem fx:id="open" mnemonicParsing="false" text="Open" />
                         <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+                        <MenuItem fx:id="back" mnemonicParsing="false" onAction="#backToMenu" text="Back to Menu" />
                         <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>

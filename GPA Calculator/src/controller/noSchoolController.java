@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class yorkController {
+public class noSchoolController {
 	@FXML
 	private AnchorPane mainPane;
 	@FXML
@@ -918,7 +918,6 @@ public class yorkController {
 	@FXML
 	protected void backToMenu(ActionEvent event) {
 		application.Main.stage.setScene(application.Main.promptWindow);
-		application.Main.stage.setTitle("GPA Calculator");
 	}
 	
 
@@ -928,6 +927,8 @@ public class yorkController {
 		}
 		return false;
 	}
+	
+	
 	protected boolean isValid(TextField tf) {
 		int parser = Integer.parseInt(tf.getText());
 		if ( parser <=9 && parser >=0  ) {

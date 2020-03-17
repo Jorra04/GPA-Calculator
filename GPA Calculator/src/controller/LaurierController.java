@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class yorkController {
+public class LaurierController {
 	@FXML
 	private AnchorPane mainPane;
 	@FXML
@@ -928,6 +928,8 @@ public class yorkController {
 		}
 		return false;
 	}
+	
+	
 	protected boolean isValid(TextField tf) {
 		int parser = Integer.parseInt(tf.getText());
 		if ( parser <=9 && parser >=0  ) {
