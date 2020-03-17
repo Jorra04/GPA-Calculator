@@ -10,6 +10,7 @@ import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class GPACalcController {
@@ -178,6 +179,8 @@ public class GPACalcController {
 
 	int GradePoint = 0;
 	
+	DecimalFormat df = new DecimalFormat("0.00");
+	
 	
 
 	double GPA = 0;
@@ -185,7 +188,7 @@ public class GPACalcController {
 	int[] gradePointArray = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	int[] gradeArray = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-	public void inirtialize() {
+	public void initialize() {
 		finalGpa.setEditable(false);
 		
 	}
@@ -886,7 +889,7 @@ public class GPACalcController {
 			finalGpa.setText(0.0 + "");
 		}
 		else {
-			finalGpa.setText((GradePoint*1.0)/totalCreds + "");
+			finalGpa.setText(df.format((GradePoint*1.0)/totalCreds));
 		}
 		totalCreds = 0;
 		GradePoint = 0;
@@ -902,6 +905,11 @@ public class GPACalcController {
 		for (Node node : mainPane.getChildren()) {
 		    if(node.getClass().equals(TextField.class)) {
 		    	((TextField)node).setText("");
+		    }
+		}
+		for (Node node : mainPane.getChildren()) {
+		    if(node.getClass().equals(SplitMenuButton.class)) {
+		    	((SplitMenuButton)node).setText("Grade");
 		    }
 		}
 		

@@ -10,17 +10,20 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
+	public static Scene promptWindow ;
+	public static Scene scene;
+	public static Stage stage;
 	@Override
 	public void start(Stage primaryStage) throws Exception{ 
-		
+		stage = primaryStage;
 		Parent root = FXMLLoader.load(getClass().getResource("/FXMLDocs/GPACalculator.fxml"));
-		   
-	    Scene scene = new Scene(root, 581, 610);
+		Parent root2 = FXMLLoader.load(getClass().getResource("/FXMLDocs/startPage.fxml")); 
+	     scene = new Scene(root, 581, 610);
 		
-	   
+	   promptWindow = new Scene(root2,581,610);
 	
 	    primaryStage.setTitle("GPA Calculator");
-	    primaryStage.setScene(scene);
+	    primaryStage.setScene(promptWindow);
 	    primaryStage.setResizable(true);
 	    primaryStage.show();
 	
