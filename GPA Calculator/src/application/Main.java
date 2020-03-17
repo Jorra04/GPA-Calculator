@@ -59,8 +59,8 @@ public class Main extends Application {
 	    Laurier = new Scene(root6, 581, 610);
 		
 	    promptWindow = new Scene(root2,460,290);
-	    Image icon = new Image(getClass().getResourceAsStream("/images/unnamed.png"));
-	    stage.getIcons().add(icon);
+	    Image icon = new Image(getClass().getResourceAsStream("/images/GPAIcon.png"));
+	    stage.getIcons().add(0,icon);
 	    primaryStage.setTitle("GPA Calculator");
 	    primaryStage.setScene(promptWindow);
 	    primaryStage.setResizable(true);

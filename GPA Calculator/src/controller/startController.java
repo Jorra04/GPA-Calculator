@@ -55,74 +55,90 @@ public class startController {
 	@FXML
 	private MenuItem sheriden;
 
+	Image image1;
+	Image image2;
+	Image image3;
+	Image image4;
+	Image image5;
+	Image image6;
+	Image image7;
+	Image image8;
+	Image image9;
+	Image image10;
+	Image image11;
+	Image image12;
+	Image image13;
+	
+
+
 	public void initialize() {
-		Image image1 = new Image(getClass().getResourceAsStream("/images/york.jpg"));
+		image1 = new Image(getClass().getResourceAsStream("/images/york.jpg"));
 		ImageView iv1 = new ImageView(image1);
 		iv1.setFitWidth(15);
 		iv1.setFitHeight(15);
 		york.setGraphic(iv1);
-		
-		Image image2 = new Image(getClass().getResourceAsStream("/images/carleton.png"));
+
+		image2 = new Image(getClass().getResourceAsStream("/images/carleton.png"));
 		ImageView iv2 = new ImageView(image2);
 		iv2.setFitWidth(15);
 		iv2.setFitHeight(15);
 		carleton.setGraphic(iv2);
-		Image image3 = new Image(getClass().getResourceAsStream("/images/guelph.png"));
+		image3 = new Image(getClass().getResourceAsStream("/images/guelph.png"));
 		ImageView iv3 = new ImageView(image3);
 		iv3.setFitWidth(15);
 		iv3.setFitHeight(15);
 		guelph.setGraphic(iv3);
-		Image image4 = new Image(getClass().getResourceAsStream("/images/Lakehead.png"));
+		image4 = new Image(getClass().getResourceAsStream("/images/Lakehead.png"));
 		ImageView iv4 = new ImageView(image4);
 		iv4.setFitWidth(15);
 		iv4.setFitHeight(15);
 		lakehead.setGraphic(iv4);
-		Image image5 = new Image(getClass().getResourceAsStream("/images/laurier.png"));
+		image5 = new Image(getClass().getResourceAsStream("/images/laurier.png"));
 		ImageView iv5 = new ImageView(image5);
 		iv5.setFitWidth(15);
 		iv5.setFitHeight(15);
 		Laurier.setGraphic(iv5);
-		Image image6 = new Image(getClass().getResourceAsStream("/images/mcgill.png"));
+		image6 = new Image(getClass().getResourceAsStream("/images/mcgill.png"));
 		ImageView iv6 = new ImageView(image6);
 		iv6.setFitWidth(15);
 		iv6.setFitHeight(15);
 		mcGill.setGraphic(iv6);
-		Image image7 = new Image(getClass().getResourceAsStream("/images/mcmaster.jpg"));
+		image7 = new Image(getClass().getResourceAsStream("/images/mcmaster.jpg"));
 		ImageView iv7 = new ImageView(image7);
 		iv7.setFitWidth(15);
 		iv7.setFitHeight(15);
 		mcMaster.setGraphic(iv7);
-		Image image8 = new Image(getClass().getResourceAsStream("/images/ottawa.jpeg"));
+		image8 = new Image(getClass().getResourceAsStream("/images/ottawa.jpeg"));
 		ImageView iv8 = new ImageView(image8);
 		iv8.setFitWidth(15);
 		iv8.setFitHeight(15);
 		ottawa.setGraphic(iv8);
-		Image image9 = new Image(getClass().getResourceAsStream("/images/sheridan.png"));
+		image9 = new Image(getClass().getResourceAsStream("/images/sheridan.png"));
 		ImageView iv9 = new ImageView(image9);
 		iv9.setFitWidth(15);
 		iv9.setFitHeight(15);
 		sheriden.setGraphic(iv9);
-		Image image10 = new Image(getClass().getResourceAsStream("/images/uoft.png"));
+		image10 = new Image(getClass().getResourceAsStream("/images/uoft.png"));
 		ImageView iv10 = new ImageView(image10);
 		iv10.setFitWidth(15);
 		iv10.setFitHeight(15);
 		uOfT.setGraphic(iv10);
-		Image image11 = new Image(getClass().getResourceAsStream("/images/waterloo.png"));
+		image11 = new Image(getClass().getResourceAsStream("/images/waterloo.png"));
 		ImageView iv11 = new ImageView(image11);
 		iv11.setFitWidth(15);
 		iv11.setFitHeight(15);
 		waterloo.setGraphic(iv11);
-		Image image12 = new Image(getClass().getResourceAsStream("/images/western.png"));
+		image12 = new Image(getClass().getResourceAsStream("/images/western.png"));
 		ImageView iv12 = new ImageView(image12);
 		iv12.setFitWidth(15);
 		iv12.setFitHeight(15);
 		western.setGraphic(iv12);
-		Image image13 = new Image(getClass().getResourceAsStream("/images/queens.png"));
+		image13 = new Image(getClass().getResourceAsStream("/images/queens.png"));
 		ImageView iv13 = new ImageView(image13);
 		iv13.setFitWidth(15);
 		iv13.setFitHeight(15);
 		Queens.setGraphic(iv13);
-		
+
 	}
 
 	@FXML
@@ -199,44 +215,67 @@ public class startController {
 		if (text.equals("York")) {
 			application.Main.stage.setTitle("York GPA Calculator");
 			application.Main.stage.setScene(application.Main.york);
+			application.Main.stage.getIcons().add(0, image1);
+//			System.out.println(application.Main.stage.getIcons());
 		} else if (text.equals("Waterloo")) {
 			application.Main.stage.setTitle("Waterloo GPA Calculator");
 			application.Main.stage.setScene(application.Main.Waterloo);
+			application.Main.stage.getIcons().add(0, image11);
 		} else if (text.equals("Western")) {
 			application.Main.stage.setTitle("Western GPA Calculator");
 			application.Main.stage.setScene(application.Main.Western);
+			application.Main.stage.getIcons().add(0, image12);
 		} else if (text.equals("Guelph")) {
 			application.Main.stage.setTitle("Guelph GPA Calculator");
 			application.Main.stage.setScene(application.Main.Guelph);
+			application.Main.stage.getIcons().add(0, image3);
+
 		} else if (text.equals("Sheriden")) {
 			application.Main.stage.setTitle("Sheriden GPA Calculator");
 			application.Main.stage.setScene(application.Main.Sheriden);
+			application.Main.stage.getIcons().add(0, image9);
+
 		} else if (text.equals("Ottawa")) {
 			application.Main.stage.setTitle("Ottawa GPA Calculator");
 			application.Main.stage.setScene(application.Main.Ottawa);
+			application.Main.stage.getIcons().add(0, image8);
+
 		} else if (text.equals("McMaster")) {
 			application.Main.stage.setTitle("McMaster GPA Calculator");
 			application.Main.stage.setScene(application.Main.McMaster);
+			application.Main.stage.getIcons().add(0, image7);
+
 		} else if (text.equals("Carleton")) {
 			application.Main.stage.setTitle("Carleton GPA Calculator");
 			application.Main.stage.setScene(application.Main.carleton);
+			application.Main.stage.getIcons().add(0, image7);
+
 		} else if (text.equals("Laurier")) {
 			application.Main.stage.setTitle("Laurier GPA Calculator");
 			application.Main.stage.setScene(application.Main.Laurier);
+			application.Main.stage.getIcons().add(0, image5);
+
 		} else if (text.equals("McGill")) {
 			application.Main.stage.setTitle("McGill GPA Calculator");
 			application.Main.stage.setScene(application.Main.McGill);
+			application.Main.stage.getIcons().add(0, image6);
+
 		} else if (text.equals("Lakehead")) {
 			application.Main.stage.setTitle("Lakehead GPA Calculator");
 			application.Main.stage.setScene(application.Main.Lakehead);
+			application.Main.stage.getIcons().add(0, image4);
+
 		} else if (text.equals("UofT")) {
 			application.Main.stage.setTitle("UofT GPA Calculator");
 			application.Main.stage.setScene(application.Main.UofT);
+			application.Main.stage.getIcons().add(0, image10);
+
 		} else if (text.equals("Queens")) {
 			application.Main.stage.setTitle("Queens GPA Calculator");
 			application.Main.stage.setScene(application.Main.Queens);
-		}
-		else {
+			application.Main.stage.getIcons().add(0, image13);
+
+		} else {
 			application.Main.stage.setTitle("random");
 			application.Main.stage.setScene(application.Main.york);
 		}
