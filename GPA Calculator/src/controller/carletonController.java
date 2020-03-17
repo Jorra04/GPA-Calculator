@@ -1157,6 +1157,8 @@ public class carletonController {
 			}
 			if(!isValid(tf)) {
 				application.alert.display("Error", "Problem");
+				tf.setText("");
+				button.setText("Grade");
 				return;
 			}
 //			System.out.println(Double.parseDouble(tf.getText()));

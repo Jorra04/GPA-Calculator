@@ -878,13 +878,13 @@ public class yorkController {
 	protected void compute(ActionEvent event) {
 		for(int i = 0; i < 17; i ++) {
 			totalCreds+= gradePointArray[i];
-			System.out.println(gradePointArray[i]);
-			System.out.println(gradeArray[i]);
+//			System.out.println(gradePointArray[i]);
+//			System.out.println(gradeArray[i]);
 			GradePoint += gradePointArray[i] * gradeArray[i];
 		}
 		
 //		System.out.println(totalCreds);
-		System.out.println("TotalGradePoint: " + GradePoint);
+//		System.out.println("TotalGradePoint: " + GradePoint);
 		if(totalCreds == 0) {
 			finalGpa.setText(0.0 + "");
 		}
@@ -947,6 +947,8 @@ public class yorkController {
 			}
 			if(!isValid(tf)) {
 				application.alert.display("Error", "Problem");
+				tf.setText("");
+				button.setText("Grade");
 				return;
 			}
 			gradePointArray[index] = Integer.parseInt(tf.getText());
