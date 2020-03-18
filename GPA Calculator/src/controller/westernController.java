@@ -920,6 +920,10 @@ public class westernController {
 		application.Main.stage.setScene(application.Main.promptWindow);
 		application.Main.stage.setTitle("GPA Calculator");
 	}
+	@FXML
+	protected void close(ActionEvent event) {
+		application.alertWithOption.display("Error", "Do you want to quit?");
+	}
 	
 
 	protected boolean isZero(TextField tf) {

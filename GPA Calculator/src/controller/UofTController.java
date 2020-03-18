@@ -2512,7 +2512,7 @@ public class UofTController {
 	}
 	@FXML
 	protected void compute(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			totalCreds+= gradePointArray[i];
 //			System.out.println("GP: " + gradePointArray[i]);
 //			System.out.println(gradeArray[i]);
@@ -2537,7 +2537,7 @@ public class UofTController {
 	}
 	@FXML
 	protected void clearAll(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
@@ -2559,6 +2559,10 @@ public class UofTController {
 	protected void backToMenu(ActionEvent event) {
 		application.Main.stage.setScene(application.Main.promptWindow);
 		application.Main.stage.setTitle("GPA Calculator");
+	}
+	@FXML
+	protected void close(ActionEvent event) {
+		application.alertWithOption.display("Error", "Do you want to quit?");
 	}
 	
 
