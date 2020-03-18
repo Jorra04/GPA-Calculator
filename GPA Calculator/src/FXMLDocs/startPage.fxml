@@ -19,19 +19,19 @@
       <Button fx:id="select" layoutX="302.0" layoutY="141.0" mnemonicParsing="false" onAction="#schoolEntered" prefHeight="34.0" prefWidth="104.0" text="Select School" />
       <SplitMenuButton fx:id="schools" layoutX="61.0" layoutY="145.0" mnemonicParsing="false" text="Schools...">
         <items>
-          <MenuItem fx:id="york" mnemonicParsing="false" onAction="#york" text="York" />
-          <MenuItem fx:id="western" mnemonicParsing="false" onAction="#Western" text="Western" />
-            <MenuItem fx:id="guelph" mnemonicParsing="false" onAction="#Guelph" text="Guelph" />
-            <MenuItem fx:id="waterloo" mnemonicParsing="false" onAction="#Waterloo" text="Waterloo" />
             <MenuItem fx:id="carleton" mnemonicParsing="false" onAction="#carleton" text="Carleton" />
-            <MenuItem fx:id="uOfT" mnemonicParsing="false" onAction="#uofT" text="UofT" />
-            <MenuItem fx:id="ottawa" mnemonicParsing="false" onAction="#ottawa" text="UOttawa" />
+            <MenuItem fx:id="guelph" mnemonicParsing="false" onAction="#Guelph" text="Guelph" />
             <MenuItem fx:id="lakehead" mnemonicParsing="false" onAction="#lakehead" text="Lakehead" />
-            <MenuItem fx:id="mcMaster" mnemonicParsing="false" onAction="#mcMaster" text="McMaster" />
             <MenuItem fx:id="Laurier" mnemonicParsing="false" onAction="#laurier" text="Laurier" />
             <MenuItem fx:id="mcGill" mnemonicParsing="false" onAction="#mcGill" text="McGill" />
+            <MenuItem fx:id="mcMaster" mnemonicParsing="false" onAction="#mcMaster" text="McMaster" />
             <MenuItem fx:id="Queens" mnemonicParsing="false" onAction="#queens" text="Queens" />
             <MenuItem fx:id="sheriden" mnemonicParsing="false" onAction="#sheriden" text="Sheriden" />
+            <MenuItem fx:id="uOfT" mnemonicParsing="false" onAction="#uofT" text="UofT" />
+            <MenuItem fx:id="ottawa" mnemonicParsing="false" onAction="#ottawa" text="UOttawa" />
+            <MenuItem fx:id="waterloo" mnemonicParsing="false" onAction="#Waterloo" text="Waterloo" />
+          <MenuItem fx:id="western" mnemonicParsing="false" onAction="#Western" text="Western" />
+          <MenuItem fx:id="york" mnemonicParsing="false" onAction="#york" text="York" />
         </items>
       </SplitMenuButton>
       <ImageView fitHeight="114.0" fitWidth="152.0" layoutX="180.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">

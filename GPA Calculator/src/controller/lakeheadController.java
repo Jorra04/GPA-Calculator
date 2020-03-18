@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 
 import java.text.DecimalFormat;
@@ -922,6 +923,7 @@ public class lakeheadController {
 	protected void backToMenu(ActionEvent event) {
 		application.Main.stage.setScene(application.Main.promptWindow);
 		application.Main.stage.setTitle("GPA Calculator");
+		
 	}
 	
 
