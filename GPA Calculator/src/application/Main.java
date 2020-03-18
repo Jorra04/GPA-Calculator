@@ -48,8 +48,8 @@ public class Main extends Application {
 	    carleton= new Scene(root3, 581, 610);
 	    Guelph = new Scene(root4, 581, 610);
 	    Lakehead = new Scene(root5, 581, 610);
-	    McGill = new Scene(root8, 581, 610);
-	    McMaster = new Scene(root7, 581, 610);
+	    McGill = new Scene(root7, 581, 610);
+	    McMaster = new Scene(root8, 581, 610);
 	    Ottawa = new Scene(root9, 581, 610);
 	    Queens = new Scene(root10, 581, 610);
 	    Sheriden = new Scene(root11, 581, 610);

@@ -4,14 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.startController">
    <children>
-      <Label layoutX="130.0" layoutY="35.0" prefHeight="68.0" prefWidth="224.0" text="Choose Your School" textAlignment="RIGHT">
+      <Label alignment="CENTER" layoutX="25.0" layoutY="32.0" prefHeight="68.0" prefWidth="419.0" text="Choose Your School" textAlignment="CENTER">
          <font>
-            <Font name="Bell MT Bold" size="24.0" />
+            <Font name="Bernard MT Condensed" size="37.0" />
          </font>
       </Label>
       <Button fx:id="select" layoutX="302.0" layoutY="141.0" mnemonicParsing="false" onAction="#schoolEntered" prefHeight="34.0" prefWidth="104.0" text="Select School" />
@@ -32,5 +34,10 @@
             <MenuItem fx:id="sheriden" mnemonicParsing="false" onAction="#sheriden" text="Sheriden" />
         </items>
       </SplitMenuButton>
+      <ImageView fitHeight="114.0" fitWidth="152.0" layoutX="180.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/student.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

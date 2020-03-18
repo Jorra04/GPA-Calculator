@@ -876,7 +876,7 @@ public class OttawaController {
 	}
 	@FXML
 	protected void compute(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			totalCreds+= gradePointArray[i];
 			System.out.println(gradePointArray[i]);
 			System.out.println(gradeArray[i]);
@@ -897,7 +897,7 @@ public class OttawaController {
 	}
 	@FXML
 	protected void clearAll(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
@@ -914,7 +914,10 @@ public class OttawaController {
 		}
 		
 	}
-	
+	@FXML
+	protected void close(ActionEvent event) {
+		application.alertWithOption.display("Error", "Do you want to quit?");
+	}
 	@FXML
 	protected void backToMenu(ActionEvent event) {
 		application.Main.stage.setScene(application.Main.promptWindow);
