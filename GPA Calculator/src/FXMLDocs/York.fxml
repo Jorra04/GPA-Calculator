@@ -173,6 +173,20 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF3Grade" text="F" />
                      </items>
                   </SplitMenuButton>
+                  <SplitMenuButton fx:id="grade4" layoutY="119.0" mnemonicParsing="false" text="Grade">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#setAP4Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA4Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP4Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB4Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP4Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC4Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP4Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD4Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE4Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF4Grade" text="F" />
+                     </items>
+                  </SplitMenuButton>
                   <SplitMenuButton fx:id="grade5" layoutY="161.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP5Grade" text="A+" />
@@ -199,6 +213,20 @@
                         <MenuItem mnemonicParsing="false" onAction="#setD6Grade" text="D" />
                         <MenuItem mnemonicParsing="false" onAction="#setE6Grade" text="E" />
                         <MenuItem mnemonicParsing="false" onAction="#setF6Grade" text="F" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton fx:id="grade7" layoutY="245.0" mnemonicParsing="false" text="Grade">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#setAP7Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA7Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP7Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB7Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP7Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC7Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP7Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD7Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE7Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF7Grade" text="F" />
                      </items>
                   </SplitMenuButton>
                   <SplitMenuButton fx:id="grade8" layoutY="287.0" mnemonicParsing="false" text="Grade">
@@ -229,6 +257,35 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF9Grade" text="F" />
                      </items>
                   </SplitMenuButton>
+                  <SplitMenuButton fx:id="grade10" layoutY="371.0" mnemonicParsing="false" text="Grade">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#setAP10Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA10Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP10Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB10Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP10Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC10Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP10Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD10Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE10Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF10Grade" text="F" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton fx:id="grade11" layoutY="413.0" mnemonicParsing="false" text="Grade">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#setAP11Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA11Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP11Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB11Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP11Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC11Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP11Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD11Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE11Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF11Grade" text="F" />
+                     </items>
+                  </SplitMenuButton>
+                  
                   <SplitMenuButton fx:id="grade12" layoutY="455.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP12Grade" text="A+" />
@@ -313,62 +370,36 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF17Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade4" layoutY="119.0" mnemonicParsing="false" text="Grade">
+                  <SplitMenuButton fx:id="grade18" layoutY="709.0" mnemonicParsing="false" text="Grade">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP4Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA4Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP4Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB4Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP4Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC4Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP4Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD4Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE4Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF4Grade" text="F" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAP18Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA18Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP18Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB18Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP18Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC18Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP18Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD18Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE18Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF18Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade7" layoutY="245.0" mnemonicParsing="false" text="Grade">
+                  
+                  <SplitMenuButton fx:id="grade19" layoutY="751.0" mnemonicParsing="false" text="Grade">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP7Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA7Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP7Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB7Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP7Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC7Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP7Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD7Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE7Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF7Grade" text="F" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAP19Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA19Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP19Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB19Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP19Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC19Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP19Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD19Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE19Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF19Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade10" layoutY="371.0" mnemonicParsing="false" text="Grade">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP10Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA10Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP10Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB10Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP10Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC10Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP10Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD10Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE10Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF10Grade" text="F" />
-                     </items>
-                  </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade11" layoutY="413.0" mnemonicParsing="false" text="Grade">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP11Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA11Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP11Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB11Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP11Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC11Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP11Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD11Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE11Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF11Grade" text="F" />
-                     </items>
-                  </SplitMenuButton>
+                  
                   <SplitMenuButton fx:id="grade20" layoutY="793.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP20Grade" text="A+" />
@@ -383,6 +414,7 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF20Grade" text="F" />
                      </items>
                   </SplitMenuButton>
+                  
                   <SplitMenuButton fx:id="grade21" layoutY="835.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP21Grade" text="A+" />
@@ -453,34 +485,36 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF25Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade18" layoutY="709.0" mnemonicParsing="false" text="Grade">
+                  
+                  <SplitMenuButton fx:id="grade26" layoutX="1.0" layoutY="1044.0" mnemonicParsing="false" text="Grade">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP18Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA18Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP18Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB18Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP18Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC18Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP18Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD18Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE18Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF18Grade" text="F" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAP26Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA26Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP26Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB26Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP26Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC26Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP26Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD26Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE26Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF26Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade19" layoutY="751.0" mnemonicParsing="false" text="Grade">
+                  <SplitMenuButton fx:id="grade27" layoutX="1.0" layoutY="1086.0" mnemonicParsing="false" text="Grade">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP19Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA19Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP19Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB19Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP19Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC19Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP19Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD19Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE19Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF19Grade" text="F" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAP27Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA27Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP27Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB27Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP27Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC27Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP27Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD27Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE27Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF27Grade" text="F" />
                      </items>
                   </SplitMenuButton>
+                  
                   <SplitMenuButton fx:id="grade28" layoutX="1.0" layoutY="1128.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP28Grade" text="A+" />
@@ -565,34 +599,22 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF33Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade26" layoutX="1.0" layoutY="1044.0" mnemonicParsing="false" text="Grade">
+                  
+                  <SplitMenuButton fx:id="grade34" layoutY="1383.0" mnemonicParsing="false" text="Grade">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP26Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA26Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP26Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB26Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP26Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC26Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP26Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD26Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE26Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF26Grade" text="F" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAP34Grade" text="A+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setA34Grade" text="A" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBP34Grade" text="B+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setB34Grade" text="B" />
+                        <MenuItem mnemonicParsing="false" onAction="#setCP34Grade" text="C+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setC34Grade" text="C" />
+                        <MenuItem mnemonicParsing="false" onAction="#setDP34Grade" text="D+" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD34Grade" text="D" />
+                        <MenuItem mnemonicParsing="false" onAction="#setE34Grade" text="E" />
+                        <MenuItem mnemonicParsing="false" onAction="#setF34Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade27" layoutX="1.0" layoutY="1086.0" mnemonicParsing="false" text="Grade">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP27Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA27Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP27Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB27Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP27Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC27Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP27Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD27Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE27Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF27Grade" text="F" />
-                     </items>
-                  </SplitMenuButton>
+                  
                   <SplitMenuButton fx:id="grade35" layoutY="1425.0" mnemonicParsing="false" text="Grade">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#setAP35Grade" text="A+" />
@@ -677,20 +699,7 @@
                         <MenuItem mnemonicParsing="false" onAction="#setF40Grade" text="F" />
                      </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="grade34" layoutY="1383.0" mnemonicParsing="false" text="Grade">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#setAP34Grade" text="A+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setA34Grade" text="A" />
-                        <MenuItem mnemonicParsing="false" onAction="#setBP34Grade" text="B+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setB34Grade" text="B" />
-                        <MenuItem mnemonicParsing="false" onAction="#setCP34Grade" text="C+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setC34Grade" text="C" />
-                        <MenuItem mnemonicParsing="false" onAction="#setDP34Grade" text="D+" />
-                        <MenuItem mnemonicParsing="false" onAction="#setD34Grade" text="D" />
-                        <MenuItem mnemonicParsing="false" onAction="#setE34Grade" text="E" />
-                        <MenuItem mnemonicParsing="false" onAction="#setF34Grade" text="F" />
-                     </items>
-                  </SplitMenuButton>
+                  
                </children>
             </AnchorPane>
             <TextField fx:id="finalGpa" layoutX="250.0" layoutY="1741.0" promptText="GPA" />

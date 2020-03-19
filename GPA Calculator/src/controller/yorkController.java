@@ -2453,37 +2453,26 @@ public class yorkController {
 				Node node = coursesPane.getChildren().get(i);
 				Node node2 = creditPane.getChildren().get(i);
 				Node node3 = gradesPane.getChildren().get(i);
-				if(!((TextField)node).getText().isEmpty()) {
-					if (node.getClass().equals(TextField.class)) {
-//						System.out.println("courses");
-						if(!((TextField)node).getText().isEmpty()) {
-							writer.write(((TextField)node).getText().toUpperCase());
-							writer.write("\t");
-						}
+				System.out.println(node3);
+				
+				if(!((TextField)node2).getText().isEmpty()) {
+					if(((TextField)node).getText().isEmpty()) {
+						writer.write("NO DATA");
+						writer.write(" \t");
 					}
-					if(node2.getClass().equals(TextField.class)) {
-//						System.out.println("credit");
-						if(!((TextField)node2).getText().isEmpty()) {
-							writer.write(((TextField)node2).getText());
-							writer.write("            \t");
-						}
+					else {
+						writer.write(((TextField)node).getText().toUpperCase());
+						writer.write(" \t");
 					}
-					if(node3.getClass().equals(SplitMenuButton.class)) {
-//						System.out.println("grades");
-						if(!((SplitMenuButton)node3).getText().equals("Grade")) {
-							writer.write(((SplitMenuButton)node3).getText());
-							writer.write("\t");
-						}
-						else {
-							if( !((TextField)node2).getText().isEmpty() && !((TextField)node).getText().isEmpty() ) {
-								writer.write("Not yet completed");
-								writer.write("\t");
-							}
-						}
-					}
-					writer.write("\r\n"); // write new line
+					writer.write(((TextField)node2).getText());
+					writer.write("\t");
+					
+					writer.write(((SplitMenuButton)node3).getText());
+					System.out.println(((SplitMenuButton)node3).getId());
+					
 				}
 				
+				writer.write("\r\n");
 			}
 			writer.write("============================================\n");
 			writer.write("Final GPA: " + finalGpa.getText());
@@ -2495,6 +2484,13 @@ public class yorkController {
 		catch (Exception e) {
 
 		}
+	}
+	
+	protected void formatter(FileWriter writer,int diff) throws Exception{
+		for(int i = 0; i < diff; i ++) {
+			writer.write(" ");
+		}
+		writer.write("\t");
 	}
 
 	@FXML
@@ -2524,17 +2520,22 @@ public class yorkController {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
-		int count = 0;
-		for (Node node : mainPane.getChildren()) {
+		for (Node node : creditPane.getChildren()) {
 			if (node.getClass().equals(TextField.class)) {
 				((TextField) node).setText("");
 			}
 		}
-		for (Node node : mainPane.getChildren()) {
+		for (Node node : coursesPane.getChildren()) {
+			if (node.getClass().equals(TextField.class)) {
+				((TextField) node).setText("");
+			}
+		}
+		for (Node node : gradesPane.getChildren()) {
 			if (node.getClass().equals(SplitMenuButton.class)) {
 				((SplitMenuButton) node).setText("Grade");
 			}
 		}
+		finalGpa.setText("");
 
 	}
 

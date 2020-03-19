@@ -1,7 +1,43 @@
 Course ID 	Credit Weight 	Grade Achieved
-EECS2032	4            	B+	
-EECS2030	3            	A	
-EECS2011	3            	C+	
-ECON1000	3            	Not yet completed	
+EECS2032 	3	A+
+EECS2311 	3	A
+EECS2022 	4	B+
+EECS2011 	3	B
+NO DATA 	4	C+
+EECS2211 	3	C+
+NO DATA 	4	C+
+EECS3311 	3	D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ============================================
-Final GPA: 6.70
+Final GPA: 
