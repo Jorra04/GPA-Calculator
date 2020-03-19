@@ -2453,69 +2453,41 @@ public class yorkController {
 				Node node = coursesPane.getChildren().get(i);
 				Node node2 = creditPane.getChildren().get(i);
 				Node node3 = gradesPane.getChildren().get(i);
-//				System.out.println(node.getClass());
-//				System.out.println(node2.getClass());
-//				System.out.println(node3.getClass());
-				if (node.getClass().equals(TextField.class)) {
-//					System.out.println("courses");
-					if(!((TextField)node).getText().isEmpty()) {
-						writer.write(((TextField)node).getText().toUpperCase());
-						writer.write("\t");
-					}
-				}
-				if(node2.getClass().equals(TextField.class)) {
-//					System.out.println("credit");
-					if(!((TextField)node2).getText().isEmpty()) {
-						writer.write(((TextField)node2).getText());
-						writer.write("            \t");
-					}
-				}
-				if(node3.getClass().equals(SplitMenuButton.class)) {
-//					System.out.println("grades");
-					if(!((SplitMenuButton)node3).getText().equals("Grade")) {
-						writer.write(((SplitMenuButton)node3).getText());
-						writer.write("\t");
-					}
-					else {
-						if( !((TextField)node2).getText().isEmpty() && !((TextField)node).getText().isEmpty() ) {
-							writer.write("Not yet completed");
+				if(!((TextField)node).getText().isEmpty()) {
+					if (node.getClass().equals(TextField.class)) {
+//						System.out.println("courses");
+						if(!((TextField)node).getText().isEmpty()) {
+							writer.write(((TextField)node).getText().toUpperCase());
 							writer.write("\t");
 						}
 					}
+					if(node2.getClass().equals(TextField.class)) {
+//						System.out.println("credit");
+						if(!((TextField)node2).getText().isEmpty()) {
+							writer.write(((TextField)node2).getText());
+							writer.write("            \t");
+						}
+					}
+					if(node3.getClass().equals(SplitMenuButton.class)) {
+//						System.out.println("grades");
+						if(!((SplitMenuButton)node3).getText().equals("Grade")) {
+							writer.write(((SplitMenuButton)node3).getText());
+							writer.write("\t");
+						}
+						else {
+							if( !((TextField)node2).getText().isEmpty() && !((TextField)node).getText().isEmpty() ) {
+								writer.write("Not yet completed");
+								writer.write("\t");
+							}
+						}
+					}
+					writer.write("\r\n"); // write new line
 				}
-				writer.write("\r\n"); // write new line
+				
 			}
+			writer.write("============================================\n");
+			writer.write("Final GPA: " + finalGpa.getText());
 
-//			for(Node node : coursesPane.getChildren()) {
-////				System.out.println("got to courses");
-//				if(node.getClass().equals(TextField.class)) {
-////					System.out.println("got to courses2");
-//					if(!((TextField)node).getText().isEmpty()) {
-////						System.out.println("got to courses3");
-//						writer.write(((TextField)node).getText());
-//					}
-//				}
-//			}
-//			for(Node node : creditPane.getChildren()) {
-////				System.out.println("got to credits");
-//				if(node.getClass().equals(TextField.class)) {
-////					System.out.println("got to credits2");
-//					if(!((TextField)node).getText().isEmpty()) {
-////						System.out.println("got to credits3");
-//						writer.write(((TextField)node).getText());
-//					}
-//				}
-//			}
-//			for(Node node : gradesPane.getChildren()) {
-////				System.out.println("got to grades");
-//				if(node.getClass().equals(SplitMenuButton.class)) {
-////					System.out.println("got to grades2");
-//					if(!((SplitMenuButton)node).getText().isEmpty() && !((SplitMenuButton)node).getText().equals("Grade") ) {
-////						System.out.println("got to grades3");
-//						writer.write(((SplitMenuButton)node).getText());
-//					}
-//				}
-//			}
 
 			writer.close();
 		}
@@ -2523,39 +2495,6 @@ public class yorkController {
 		catch (Exception e) {
 
 		}
-//		for(Node node : coursesPane.getChildren()) {
-////			System.out.println("got to courses");
-//			if(node.getClass().equals(TextField.class)) {
-////				System.out.println("got to courses2");
-//				if(!((TextField)node).getText().isEmpty()) {
-////					System.out.println("got to courses3");
-//					System.out.print("Course ID: ");
-//					System.out.println(((TextField)node).getText());
-//				}
-//			}
-//		}
-//		for(Node node : creditPane.getChildren()) {
-////			System.out.println("got to credits");
-//			if(node.getClass().equals(TextField.class)) {
-////				System.out.println("got to credits2");
-//				if(!((TextField)node).getText().isEmpty()) {
-////					System.out.println("got to credits3");
-//					System.out.print("Credit Weight: ");
-//					System.out.println(((TextField)node).getText());
-//				}
-//			}
-//		}
-//		for(Node node : gradesPane.getChildren()) {
-////			System.out.println("got to grades");
-//			if(node.getClass().equals(SplitMenuButton.class)) {
-////				System.out.println("got to grades2");
-//				if(!((SplitMenuButton)node).getText().isEmpty() && !((SplitMenuButton)node).getText().equals("Grade") ) {
-////					System.out.println("got to grades3");
-//					System.out.print("Grade Achieved: ");
-//					System.out.println(((SplitMenuButton)node).getText());
-//				}
-//			}
-//		}
 	}
 
 	@FXML

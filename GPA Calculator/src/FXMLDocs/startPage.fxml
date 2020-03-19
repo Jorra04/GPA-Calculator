@@ -21,16 +21,12 @@
         <items>
             <MenuItem fx:id="carleton" mnemonicParsing="false" onAction="#carleton" text="Carleton" />
             <MenuItem fx:id="guelph" mnemonicParsing="false" onAction="#Guelph" text="Guelph" />
-            <MenuItem fx:id="lakehead" mnemonicParsing="false" onAction="#lakehead" text="Lakehead" />
             <MenuItem fx:id="Laurier" mnemonicParsing="false" onAction="#laurier" text="Laurier" />
-            <MenuItem fx:id="mcGill" mnemonicParsing="false" onAction="#mcGill" text="McGill" />
             <MenuItem fx:id="mcMaster" mnemonicParsing="false" onAction="#mcMaster" text="McMaster" />
             <MenuItem fx:id="Queens" mnemonicParsing="false" onAction="#queens" text="Queens" />
-            <MenuItem fx:id="sheriden" mnemonicParsing="false" onAction="#sheriden" text="Sheriden" />
+            <MenuItem fx:id="ryerson" mnemonicParsing="false" onAction="#sheriden" text="Ryerson" />
             <MenuItem fx:id="uOfT" mnemonicParsing="false" onAction="#uofT" text="UofT" />
             <MenuItem fx:id="ottawa" mnemonicParsing="false" onAction="#ottawa" text="UOttawa" />
-            <MenuItem fx:id="waterloo" mnemonicParsing="false" onAction="#Waterloo" text="Waterloo" />
-          <MenuItem fx:id="western" mnemonicParsing="false" onAction="#Western" text="Western" />
           <MenuItem fx:id="york" mnemonicParsing="false" onAction="#york" text="York" />
         </items>
       </SplitMenuButton>

@@ -21,7 +21,7 @@ public class Main extends Application {
 	public static Scene McMaster;
 	public static Scene Ottawa;
 	public static Scene Queens;
-	public static Scene Sheriden;
+	public static Scene Ryerson;
 	public static Scene Western;
 	public static Scene Waterloo;
 	public static Scene UofT;
@@ -52,7 +52,7 @@ public class Main extends Application {
 	    McMaster = new Scene(root8, 581, 610);
 	    Ottawa = new Scene(root9, 581, 610);
 	    Queens = new Scene(root10, 581, 610);
-	    Sheriden = new Scene(root11, 581, 610);
+	    Ryerson = new Scene(root11, 581, 610);
 	    Western = new Scene(root14, 581, 610);
 	    Waterloo = new Scene(root13, 581, 610);
 	    UofT = new Scene(root12, 581, 610);
