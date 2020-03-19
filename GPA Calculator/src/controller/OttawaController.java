@@ -923,6 +923,8 @@ public class OttawaController {
 	protected void backToMenu(ActionEvent event) {
 		application.Main.stage.setScene(application.Main.promptWindow);
 		application.Main.stage.setTitle("GPA Calculator");
+		Image icon = new Image(getClass().getResourceAsStream("/images/schoolIcon.png"));
+	    application.Main.stage.getIcons().add(0,icon);
 	}
 	
 
