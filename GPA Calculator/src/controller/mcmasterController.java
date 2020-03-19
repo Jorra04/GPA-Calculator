@@ -12,12 +12,19 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.util.*;
 
 public class mcmasterController {
 	@FXML
     private AnchorPane mainPane;
+	@FXML
+    private AnchorPane coursesPane;
+	@FXML
+    private AnchorPane creditPane;
+	@FXML
+    private AnchorPane gradesPane;
 
     @FXML
     private Menu file;
@@ -2535,6 +2542,63 @@ public class mcmasterController {
 		totalCreds = 0;
 		GradePoint = 0;
 		
+	}
+	@FXML
+	protected void save(ActionEvent event) { 
+		/*
+		 * 
+		 */
+		try {
+			FileWriter writer = new FileWriter("results.txt", false);
+			writer.write("Course ID 	Credit Weight 	Grade Achieved");
+			writer.write("\r\n"); // write new line
+//			System.out.println(coursesPane.getChildren());
+//			System.out.println(creditPane.getChildren());
+//			System.out.println(gradesPane.getChildren());
+			for (int i = 0; i < gradesPane.getChildren().size(); i++) {
+				Node node = coursesPane.getChildren().get(i);
+				Node node2 = creditPane.getChildren().get(i);
+				Node node3 = gradesPane.getChildren().get(i);
+				
+				if(!((TextField)node2).getText().isEmpty()) {
+					if(((TextField)node).getText().isEmpty()) {
+						writer.write("NO DATA");
+						formatter(writer,12-7);
+					}
+					else {
+						writer.write(((TextField)node).getText().toUpperCase());
+						formatter(writer,12-((TextField)node).getText().length() );
+					}
+					writer.write(((TextField)node2).getText());
+					formatter(writer,16-((TextField)node2).getText().length() );
+					
+					if(((SplitMenuButton)node3).getText().equals("Grade")) {
+						writer.write("NOT COMPLETE");
+					}
+					else {
+						writer.write(((SplitMenuButton)node3).getText());
+					}
+					writer.write("\r\n");
+				}
+				
+				
+			}
+			writer.write("============================================\n");
+			writer.write("McMaster GPA: " + finalGpa.getText());
+
+
+			writer.close();
+		}
+
+		catch (Exception e) {
+			application.alert.display("Error", "Saving Exception.");
+		}
+	}
+	
+	protected void formatter(FileWriter writer,int diff) throws Exception{
+		for(int i = 0; i < diff; i ++) {
+			writer.write(" ");
+		}
 	}
 	@FXML
 	protected void clearAll(ActionEvent event) {

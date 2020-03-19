@@ -1,43 +1,7 @@
 Course ID 	Credit Weight 	Grade Achieved
-EECS2032 	3	A+
-EECS2311 	3	A
-EECS2022 	4	B+
-EECS2011 	3	B
-NO DATA 	4	C+
-EECS2211 	3	C+
-NO DATA 	4	C+
-EECS3311 	3	D
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1           1               B
+2           1               NOT COMPLETE
+3           1               A-
+4           1               NOT COMPLETE
 ============================================
-Final GPA: 
+UofT GPA: 

@@ -2441,7 +2441,10 @@ public class yorkController {
 	}
 
 	@FXML
-	protected void save(ActionEvent event) {
+	protected void save(ActionEvent event) { 
+		/*
+		 * 
+		 */
 		try {
 			FileWriter writer = new FileWriter("results.txt", false);
 			writer.write("Course ID 	Credit Weight 	Grade Achieved");
@@ -2453,36 +2456,39 @@ public class yorkController {
 				Node node = coursesPane.getChildren().get(i);
 				Node node2 = creditPane.getChildren().get(i);
 				Node node3 = gradesPane.getChildren().get(i);
-				System.out.println(node3);
 				
 				if(!((TextField)node2).getText().isEmpty()) {
 					if(((TextField)node).getText().isEmpty()) {
 						writer.write("NO DATA");
-						writer.write(" \t");
+						formatter(writer,12-7);
 					}
 					else {
 						writer.write(((TextField)node).getText().toUpperCase());
-						writer.write(" \t");
+						formatter(writer,12-((TextField)node).getText().length() );
 					}
 					writer.write(((TextField)node2).getText());
-					writer.write("\t");
+					formatter(writer,16-((TextField)node2).getText().length() );
 					
-					writer.write(((SplitMenuButton)node3).getText());
-					System.out.println(((SplitMenuButton)node3).getId());
-					
+					if(((SplitMenuButton)node3).getText().equals("Grade")) {
+						writer.write("NOT COMPLETE");
+					}
+					else {
+						writer.write(((SplitMenuButton)node3).getText());
+					}
+					writer.write("\r\n");
 				}
 				
-				writer.write("\r\n");
+				
 			}
 			writer.write("============================================\n");
-			writer.write("Final GPA: " + finalGpa.getText());
+			writer.write("York University GPA: " + finalGpa.getText());
 
 
 			writer.close();
 		}
 
 		catch (Exception e) {
-
+			application.alert.display("Error", "Saving Exception.");
 		}
 	}
 	
@@ -2490,7 +2496,6 @@ public class yorkController {
 		for(int i = 0; i < diff; i ++) {
 			writer.write(" ");
 		}
-		writer.write("\t");
 	}
 
 	@FXML
