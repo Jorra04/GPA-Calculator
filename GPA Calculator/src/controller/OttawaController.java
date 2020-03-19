@@ -196,10 +196,14 @@ public class OttawaController {
 
 	@FXML
 	protected void setAP1Grade(ActionEvent event) {
-		caller(gradePoint1,grade1,0,9,"A+");
+		caller(gradePoint1,grade1,0,10,"A+");
 	}
 	@FXML
 	protected void setA1Grade(ActionEvent event) {
+		caller(gradePoint1,grade1,0,9,"A");
+	}
+	@FXML
+	protected void setAM1Grade(ActionEvent event) {
 		caller(gradePoint1,grade1,0,8,"A");
 	}
 	@FXML
@@ -236,645 +240,709 @@ public class OttawaController {
 	}
 	@FXML
 	protected void setAP2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,9,"A+");
+		caller(gradePoint2,grade2,0,10,"A+");
 	}
 	@FXML
 	protected void setA2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,8,"A");
+		caller(gradePoint2,grade2,0,9,"A");
+	}
+	@FXML
+	protected void setAM2Grade(ActionEvent event) {
+		caller(gradePoint2,grade2,0,8,"A");
 	}
 	@FXML
 	protected void setBP2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,7,"B+");
+		caller(gradePoint2,grade2,0,7,"B+");
 	}
 	@FXML
 	protected void setB2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,6,"B");
+		caller(gradePoint2,grade2,0,6,"B");
 	}
 	@FXML
 	protected void setCP2Grade(ActionEvent event) {
-		caller(gradePoint1,grade2,1,5,"C+");
+		caller(gradePoint2,grade2,0,5,"C+");
 	}
 	@FXML
 	protected void setC2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,4,"C");
+		caller(gradePoint2,grade2,0,4,"C");
 	}
 	@FXML
 	protected void setDP2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,3,"D+");
+		caller(gradePoint2,grade2,0,3,"D+");
 	}
 	@FXML
 	protected void setD2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,2,"D");
+		caller(gradePoint2,grade2,0,2,"D");
 	}
 	@FXML
 	protected void setE2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,1,"E");
+		caller(gradePoint2,grade2,0,1,"E");
 	}
 	@FXML
 	protected void setF2Grade(ActionEvent event) {
-		caller(gradePoint2,grade2,1,0,"F");
+		caller(gradePoint2,grade2,0,0,"F");
 	}
 	@FXML
 	protected void setAP3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,9,"A+");
+		caller(gradePoint3,grade3,0,10,"A+");
 	}
 	@FXML
 	protected void setA3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,8,"A");
+		caller(gradePoint3,grade3,0,9,"A");
+	}
+	@FXML
+	protected void setAM3Grade(ActionEvent event) {
+		caller(gradePoint3,grade3,0,8,"A");
 	}
 	@FXML
 	protected void setBP3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,7,"B+");
+		caller(gradePoint3,grade3,0,7,"B+");
 	}
 	@FXML
 	protected void setB3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,6,"B");
+		caller(gradePoint3,grade3,0,6,"B");
 	}
 	@FXML
 	protected void setCP3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,5,"C+");
+		caller(gradePoint3,grade3,0,5,"C+");
 	}
 	@FXML
 	protected void setC3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,4,"C");
+		caller(gradePoint3,grade3,0,4,"C");
 	}
 	@FXML
 	protected void setDP3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,3,"D+");
+		caller(gradePoint3,grade3,0,3,"D+");
 	}
 	@FXML
 	protected void setD3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,2,"D");
+		caller(gradePoint3,grade3,0,2,"D");
 	}
 	@FXML
 	protected void setE3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,1,"E");
+		caller(gradePoint3,grade3,0,1,"E");
 	}
 	@FXML
 	protected void setF3Grade(ActionEvent event) {
-		caller(gradePoint3,grade3,2,0,"F");
+		caller(gradePoint3,grade3,0,0,"F");
 	}
 	@FXML
 	protected void setAP4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,9,"A+");
+		caller(gradePoint4,grade4,0,10,"A+");
 	}
 	@FXML
 	protected void setA4Grade(ActionEvent event) {
-		System.out.println("Here");
-		caller(gradePoint4,grade4,3,8,"A");
+		caller(gradePoint4,grade4,0,9,"A");
+	}
+	@FXML
+	protected void setAM4Grade(ActionEvent event) {
+		caller(gradePoint4,grade4,0,8,"A");
 	}
 	@FXML
 	protected void setBP4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,7,"B+");
+		caller(gradePoint4,grade4,0,7,"B+");
 	}
 	@FXML
 	protected void setB4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,6,"B");
+		caller(gradePoint4,grade4,0,6,"B");
 	}
 	@FXML
 	protected void setCP4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,5,"C+");
+		caller(gradePoint4,grade4,0,5,"C+");
 	}
 	@FXML
 	protected void setC4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,4,"C");
+		caller(gradePoint4,grade4,0,4,"C");
 	}
 	@FXML
 	protected void setDP4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,3,"D+");
+		caller(gradePoint4,grade4,0,3,"D+");
 	}
 	@FXML
 	protected void setD4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,2,"D");
+		caller(gradePoint4,grade4,0,2,"D");
 	}
 	@FXML
 	protected void setE4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,1,"E");
+		caller(gradePoint4,grade4,0,1,"E");
 	}
 	@FXML
 	protected void setF4Grade(ActionEvent event) {
-		caller(gradePoint4,grade4,3,0,"F");
+		caller(gradePoint4,grade4,0,0,"F");
 	}
 	@FXML
 	protected void setAP5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,9,"A+");
+		caller(gradePoint5,grade5,0,10,"A+");
 	}
 	@FXML
 	protected void setA5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,8,"A");
+		caller(gradePoint5,grade5,0,9,"A");
+	}
+	@FXML
+	protected void setAM5Grade(ActionEvent event) {
+		caller(gradePoint5,grade5,0,8,"A");
 	}
 	@FXML
 	protected void setBP5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,7,"B+");
+		caller(gradePoint5,grade5,0,7,"B+");
 	}
 	@FXML
 	protected void setB5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,6,"B");
+		caller(gradePoint5,grade5,0,6,"B");
 	}
 	@FXML
 	protected void setCP5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,5,"C+");
+		caller(gradePoint5,grade5,0,5,"C+");
 	}
 	@FXML
 	protected void setC5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,4,"C");
+		caller(gradePoint5,grade5,0,4,"C");
 	}
 	@FXML
 	protected void setDP5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,3,"D+");
+		caller(gradePoint5,grade5,0,3,"D+");
 	}
 	@FXML
 	protected void setD5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,2,"D");
+		caller(gradePoint5,grade5,0,2,"D");
 	}
 	@FXML
 	protected void setE5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,1,"E");
+		caller(gradePoint5,grade5,0,1,"E");
 	}
 	@FXML
 	protected void setF5Grade(ActionEvent event) {
-		caller(gradePoint5,grade5,4,0,"F");
+		caller(gradePoint5,grade5,0,0,"F");
 	}
 	@FXML
 	protected void setAP6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,9,"A+");
+		caller(gradePoint6,grade6,0,10,"A+");
 	}
 	@FXML
 	protected void setA6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,8,"A");
+		caller(gradePoint6,grade6,0,9,"A");
+	}
+	@FXML
+	protected void setAM6Grade(ActionEvent event) {
+		caller(gradePoint6,grade6,0,8,"A");
 	}
 	@FXML
 	protected void setBP6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,7,"B+");
+		caller(gradePoint6,grade6,0,7,"B+");
 	}
 	@FXML
 	protected void setB6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,6,"B");
+		caller(gradePoint6,grade6,0,6,"B");
 	}
 	@FXML
 	protected void setCP6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,5,"C+");
+		caller(gradePoint6,grade6,0,5,"C+");
 	}
 	@FXML
 	protected void setC6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,4,"C");
+		caller(gradePoint6,grade6,0,4,"C");
 	}
 	@FXML
 	protected void setDP6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,3,"D+");
+		caller(gradePoint6,grade6,0,3,"D+");
 	}
 	@FXML
 	protected void setD6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,2,"D");
+		caller(gradePoint6,grade6,0,2,"D");
 	}
 	@FXML
 	protected void setE6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,1,"E");
+		caller(gradePoint6,grade6,0,1,"E");
 	}
 	@FXML
 	protected void setF6Grade(ActionEvent event) {
-		caller(gradePoint6,grade6,5,0,"F");
+		caller(gradePoint6,grade6,0,0,"F");
 	}
 	@FXML
 	protected void setAP7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,9,"A+");
+		caller(gradePoint7,grade7,0,10,"A+");
 	}
 	@FXML
 	protected void setA7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,8,"A");
+		caller(gradePoint7,grade7,0,9,"A");
+	}
+	@FXML
+	protected void setAM7Grade(ActionEvent event) {
+		caller(gradePoint7,grade7,0,8,"A");
 	}
 	@FXML
 	protected void setBP7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,7,"B+");
+		caller(gradePoint7,grade7,0,7,"B+");
 	}
 	@FXML
 	protected void setB7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,6,"B");
+		caller(gradePoint7,grade7,0,6,"B");
 	}
 	@FXML
 	protected void setCP7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,5,"C+");
+		caller(gradePoint7,grade7,0,5,"C+");
 	}
 	@FXML
 	protected void setC7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,4,"C");
+		caller(gradePoint7,grade7,0,4,"C");
 	}
 	@FXML
 	protected void setDP7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,3,"D+");
+		caller(gradePoint7,grade7,0,3,"D+");
 	}
 	@FXML
 	protected void setD7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,2,"D");
+		caller(gradePoint7,grade7,0,2,"D");
 	}
 	@FXML
 	protected void setE7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,1,"E");
+		caller(gradePoint7,grade7,0,1,"E");
 	}
 	@FXML
 	protected void setF7Grade(ActionEvent event) {
-		caller(gradePoint7,grade7,6,0,"F");
+		caller(gradePoint7,grade7,0,0,"F");
 	}
 	@FXML
 	protected void setAP8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,9,"A+");
+		caller(gradePoint8,grade8,0,10,"A+");
 	}
 	@FXML
 	protected void setA8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,8,"A");
+		caller(gradePoint8,grade8,0,9,"A");
+	}
+	@FXML
+	protected void setAM8Grade(ActionEvent event) {
+		caller(gradePoint8,grade8,0,8,"A");
 	}
 	@FXML
 	protected void setBP8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,7,"B+");
+		caller(gradePoint8,grade8,0,7,"B+");
 	}
 	@FXML
 	protected void setB8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,6,"B");
+		caller(gradePoint8,grade8,0,6,"B");
 	}
 	@FXML
 	protected void setCP8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,5,"C+");
+		caller(gradePoint8,grade8,0,5,"C+");
 	}
 	@FXML
 	protected void setC8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,4,"C");
+		caller(gradePoint8,grade8,0,4,"C");
 	}
 	@FXML
 	protected void setDP8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,3,"D+");
+		caller(gradePoint8,grade8,0,3,"D+");
 	}
 	@FXML
 	protected void setD8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,2,"D");
+		caller(gradePoint8,grade8,0,2,"D");
 	}
 	@FXML
 	protected void setE8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,1,"E");
+		caller(gradePoint8,grade8,0,1,"E");
 	}
 	@FXML
 	protected void setF8Grade(ActionEvent event) {
-		caller(gradePoint8,grade8,7,0,"F");
+		caller(gradePoint8,grade8,0,0,"F");
 	}
 	@FXML
 	protected void setAP9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,9,"A+");
+		caller(gradePoint9,grade9,0,10,"A+");
 	}
 	@FXML
 	protected void setA9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,8,"A");
+		caller(gradePoint9,grade9,0,9,"A");
+	}
+	@FXML
+	protected void setAM9Grade(ActionEvent event) {
+		caller(gradePoint9,grade9,0,8,"A");
 	}
 	@FXML
 	protected void setBP9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,7,"B+");
+		caller(gradePoint9,grade9,0,7,"B+");
 	}
 	@FXML
 	protected void setB9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,6,"B");
+		caller(gradePoint9,grade9,0,6,"B");
 	}
 	@FXML
 	protected void setCP9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,5,"C+");
+		caller(gradePoint9,grade9,0,5,"C+");
 	}
 	@FXML
 	protected void setC9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,4,"C");
+		caller(gradePoint9,grade9,0,4,"C");
 	}
 	@FXML
 	protected void setDP9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,3,"D+");
+		caller(gradePoint9,grade9,0,3,"D+");
 	}
 	@FXML
 	protected void setD9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,2,"D");
+		caller(gradePoint9,grade9,0,2,"D");
 	}
 	@FXML
 	protected void setE9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,1,"E");
+		caller(gradePoint9,grade9,0,1,"E");
 	}
 	@FXML
 	protected void setF9Grade(ActionEvent event) {
-		caller(gradePoint9,grade9,8,0,"F");
+		caller(gradePoint9,grade9,0,0,"F");
 	}
 	@FXML
 	protected void setAP10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,9,"A+");
+		caller(gradePoint10,grade10,0,10,"A+");
 	}
 	@FXML
 	protected void setA10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,8,"A");
+		caller(gradePoint10,grade10,0,9,"A");
+	}
+	@FXML
+	protected void setAM10Grade(ActionEvent event) {
+		caller(gradePoint10,grade10,0,8,"A");
 	}
 	@FXML
 	protected void setBP10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,7,"B+");
+		caller(gradePoint10,grade10,0,7,"B+");
 	}
 	@FXML
 	protected void setB10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,6,"B");
+		caller(gradePoint10,grade10,0,6,"B");
 	}
 	@FXML
 	protected void setCP10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,5,"C+");
+		caller(gradePoint10,grade10,0,5,"C+");
 	}
 	@FXML
 	protected void setC10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,4,"C");
+		caller(gradePoint10,grade10,0,4,"C");
 	}
 	@FXML
 	protected void setDP10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,3,"D+");
+		caller(gradePoint10,grade10,0,3,"D+");
 	}
 	@FXML
 	protected void setD10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,2,"D");
+		caller(gradePoint10,grade10,0,2,"D");
 	}
 	@FXML
 	protected void setE10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,1,"E");
+		caller(gradePoint10,grade10,0,1,"E");
 	}
 	@FXML
 	protected void setF10Grade(ActionEvent event) {
-		caller(gradePoint10,grade10,9,0,"F");
+		caller(gradePoint10,grade10,0,0,"F");
 	}
 	@FXML
 	protected void setAP11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,9,"A+");
+		caller(gradePoint11,grade11,0,10,"A+");
 	}
 	@FXML
 	protected void setA11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,8,"A");
+		caller(gradePoint11,grade11,0,9,"A");
+	}
+	@FXML
+	protected void setAM11Grade(ActionEvent event) {
+		caller(gradePoint11,grade11,0,8,"A");
 	}
 	@FXML
 	protected void setBP11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,7,"B+");
+		caller(gradePoint11,grade11,0,7,"B+");
 	}
 	@FXML
 	protected void setB11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,6,"B");
+		caller(gradePoint11,grade11,0,6,"B");
 	}
 	@FXML
 	protected void setCP11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,5,"C+");
+		caller(gradePoint11,grade11,0,5,"C+");
 	}
 	@FXML
 	protected void setC11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,4,"C");
+		caller(gradePoint11,grade11,0,4,"C");
 	}
 	@FXML
 	protected void setDP11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,3,"D+");
+		caller(gradePoint11,grade11,0,3,"D+");
 	}
 	@FXML
 	protected void setD11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,2,"D");
+		caller(gradePoint11,grade11,0,2,"D");
 	}
 	@FXML
 	protected void setE11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,1,"E");
+		caller(gradePoint11,grade11,0,1,"E");
 	}
 	@FXML
 	protected void setF11Grade(ActionEvent event) {
-		caller(gradePoint11,grade11,10,0,"F");
+		caller(gradePoint11,grade11,0,0,"F");
 	}
 	@FXML
 	protected void setAP12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,9,"A+");
+		caller(gradePoint12,grade12,0,10,"A+");
 	}
 	@FXML
 	protected void setA12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,8,"A");
+		caller(gradePoint12,grade12,0,9,"A");
+	}
+	@FXML
+	protected void setAM12Grade(ActionEvent event) {
+		caller(gradePoint12,grade12,0,8,"A");
 	}
 	@FXML
 	protected void setBP12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,7,"B+");
+		caller(gradePoint12,grade12,0,7,"B+");
 	}
 	@FXML
 	protected void setB12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,6,"B");
+		caller(gradePoint12,grade12,0,6,"B");
 	}
 	@FXML
 	protected void setCP12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,5,"C+");
+		caller(gradePoint12,grade12,0,5,"C+");
 	}
 	@FXML
 	protected void setC12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,4,"C");
+		caller(gradePoint12,grade12,0,4,"C");
 	}
 	@FXML
 	protected void setDP12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,3,"D+");
+		caller(gradePoint12,grade12,0,3,"D+");
 	}
 	@FXML
 	protected void setD12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,2,"D");
+		caller(gradePoint12,grade12,0,2,"D");
 	}
 	@FXML
 	protected void setE12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,1,"E");
+		caller(gradePoint12,grade12,0,1,"E");
 	}
 	@FXML
 	protected void setF12Grade(ActionEvent event) {
-		caller(gradePoint12,grade12,11,0,"F");
+		caller(gradePoint12,grade12,0,0,"F");
 	}
 	@FXML
 	protected void setAP13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,9,"A+");
+		caller(gradePoint13,grade13,0,10,"A+");
 	}
 	@FXML
 	protected void setA13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,8,"A");
+		caller(gradePoint13,grade13,0,9,"A");
+	}
+	@FXML
+	protected void setAM13Grade(ActionEvent event) {
+		caller(gradePoint13,grade13,0,8,"A");
 	}
 	@FXML
 	protected void setBP13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,7,"B+");
+		caller(gradePoint13,grade13,0,7,"B+");
 	}
 	@FXML
 	protected void setB13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,6,"B");
+		caller(gradePoint13,grade13,0,6,"B");
 	}
 	@FXML
 	protected void setCP13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,5,"C+");
+		caller(gradePoint13,grade13,0,5,"C+");
 	}
 	@FXML
 	protected void setC13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,4,"C");
+		caller(gradePoint13,grade13,0,4,"C");
 	}
 	@FXML
 	protected void setDP13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,3,"D+");
+		caller(gradePoint13,grade13,0,3,"D+");
 	}
 	@FXML
 	protected void setD13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,2,"D");
+		caller(gradePoint13,grade13,0,2,"D");
 	}
 	@FXML
 	protected void setE13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,1,"E");
+		caller(gradePoint13,grade13,0,1,"E");
 	}
 	@FXML
 	protected void setF13Grade(ActionEvent event) {
-		caller(gradePoint13,grade13,12,0,"F");
+		caller(gradePoint13,grade13,0,0,"F");
 	}
 	@FXML
 	protected void setAP14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,9,"A+");
+		caller(gradePoint14,grade14,0,10,"A+");
 	}
 	@FXML
 	protected void setA14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,8,"A");
+		caller(gradePoint14,grade14,0,9,"A");
+	}
+	@FXML
+	protected void setAM14Grade(ActionEvent event) {
+		caller(gradePoint14,grade14,0,8,"A");
 	}
 	@FXML
 	protected void setBP14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,7,"B+");
+		caller(gradePoint14,grade14,0,7,"B+");
 	}
 	@FXML
 	protected void setB14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,6,"B");
+		caller(gradePoint14,grade14,0,6,"B");
 	}
 	@FXML
 	protected void setCP14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,5,"C+");
+		caller(gradePoint14,grade14,0,5,"C+");
 	}
 	@FXML
 	protected void setC14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,4,"C");
+		caller(gradePoint14,grade14,0,4,"C");
 	}
 	@FXML
 	protected void setDP14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,3,"D+");
+		caller(gradePoint14,grade14,0,3,"D+");
 	}
 	@FXML
 	protected void setD14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,2,"D");
+		caller(gradePoint14,grade14,0,2,"D");
 	}
 	@FXML
 	protected void setE14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,1,"E");
+		caller(gradePoint14,grade14,0,1,"E");
 	}
 	@FXML
 	protected void setF14Grade(ActionEvent event) {
-		caller(gradePoint14,grade14,13,0,"F");
+		caller(gradePoint14,grade14,0,0,"F");
 	}
 	@FXML
 	protected void setAP15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,9,"A+");
+		caller(gradePoint15,grade15,0,10,"A+");
 	}
 	@FXML
 	protected void setA15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,8,"A");
+		caller(gradePoint15,grade15,0,9,"A");
+	}
+	@FXML
+	protected void setAM15Grade(ActionEvent event) {
+		caller(gradePoint15,grade15,0,8,"A");
 	}
 	@FXML
 	protected void setBP15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,7,"B+");
+		caller(gradePoint15,grade15,0,7,"B+");
 	}
 	@FXML
 	protected void setB15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,6,"B");
+		caller(gradePoint15,grade15,0,6,"B");
 	}
 	@FXML
 	protected void setCP15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,5,"C+");
+		caller(gradePoint15,grade15,0,5,"C+");
 	}
 	@FXML
 	protected void setC15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,4,"C");
+		caller(gradePoint15,grade15,0,4,"C");
 	}
 	@FXML
 	protected void setDP15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,3,"D+");
+		caller(gradePoint15,grade15,0,3,"D+");
 	}
 	@FXML
 	protected void setD15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,2,"D");
+		caller(gradePoint15,grade15,0,2,"D");
 	}
 	@FXML
 	protected void setE15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,1,"E");
+		caller(gradePoint15,grade15,0,1,"E");
 	}
 	@FXML
 	protected void setF15Grade(ActionEvent event) {
-		caller(gradePoint15,grade15,14,0,"F");
+		caller(gradePoint15,grade15,0,0,"F");
 	}
 	@FXML
 	protected void setAP16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,9,"A+");
+		caller(gradePoint16,grade16,0,10,"A+");
 	}
 	@FXML
 	protected void setA16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,8,"A");
+		caller(gradePoint16,grade16,0,9,"A");
+	}
+	@FXML
+	protected void setAM16Grade(ActionEvent event) {
+		caller(gradePoint16,grade16,0,8,"A");
 	}
 	@FXML
 	protected void setBP16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,7,"B+");
+		caller(gradePoint16,grade16,0,7,"B+");
 	}
 	@FXML
 	protected void setB16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,6,"B");
+		caller(gradePoint16,grade16,0,6,"B");
 	}
 	@FXML
 	protected void setCP16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,5,"C+");
+		caller(gradePoint16,grade16,0,5,"C+");
 	}
 	@FXML
 	protected void setC16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,4,"C");
+		caller(gradePoint16,grade16,0,4,"C");
 	}
 	@FXML
 	protected void setDP16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,3,"D+");
+		caller(gradePoint16,grade16,0,3,"D+");
 	}
 	@FXML
 	protected void setD16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,2,"D");
+		caller(gradePoint16,grade16,0,2,"D");
 	}
 	@FXML
 	protected void setE16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,1,"E");
+		caller(gradePoint16,grade16,0,1,"E");
 	}
 	@FXML
 	protected void setF16Grade(ActionEvent event) {
-		caller(gradePoint16,grade16,15,0,"F");
+		caller(gradePoint16,grade16,0,0,"F");
 	}
 	@FXML
 	protected void setAP17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,9,"A+");
+		caller(gradePoint17,grade17,0,10,"A+");
 	}
 	@FXML
 	protected void setA17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,8,"A");
+		caller(gradePoint17,grade17,0,9,"A");
+	}
+	@FXML
+	protected void setAM17Grade(ActionEvent event) {
+		caller(gradePoint17,grade17,0,8,"A");
 	}
 	@FXML
 	protected void setBP17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,7,"B+");
+		caller(gradePoint17,grade17,0,7,"B+");
 	}
 	@FXML
 	protected void setB17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,6,"B");
+		caller(gradePoint17,grade17,0,6,"B");
 	}
 	@FXML
 	protected void setCP17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,5,"C+");
+		caller(gradePoint17,grade17,0,5,"C+");
 	}
 	@FXML
 	protected void setC17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,4,"C");
+		caller(gradePoint17,grade17,0,4,"C");
 	}
 	@FXML
 	protected void setDP17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,3,"D+");
+		caller(gradePoint17,grade17,0,3,"D+");
 	}
 	@FXML
 	protected void setD17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,2,"D");
+		caller(gradePoint17,grade17,0,2,"D");
 	}
 	@FXML
 	protected void setE17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,1,"E");
+		caller(gradePoint17,grade17,0,1,"E");
 	}
 	@FXML
 	protected void setF17Grade(ActionEvent event) {
-		caller(gradePoint17,grade17,16,0,"F");
+		caller(gradePoint17,grade17,0,0,"F");
 	}
+	
 	@FXML
 	protected void compute(ActionEvent event) {
 		for(int i = 0; i < 40; i ++) {
