@@ -2642,7 +2642,7 @@ public class QueensController {
 	protected boolean isValid(TextField tf) {
 		double parser = Double.parseDouble(tf.getText());
 //		System.out.println(parser);
-		if ( parser == 0.5 || parser == 1 || parser == 0  ) {
+		if ( parser <= 9 && parser >= 0 ) {
 			return true;
 		}
 		return false;

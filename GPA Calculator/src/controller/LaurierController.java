@@ -2642,7 +2642,7 @@ public class LaurierController {
 	protected boolean isValid(TextField tf) {
 		double parser = Double.parseDouble(tf.getText());
 //		System.out.println(parser);
-		if ( parser == 0.5 || parser == 1 || parser == 0  ) {
+		if ( parser == 0.5 || parser == 0.25 || parser == 0 || parser == 1 ) {
 			return true;
 		}
 		return false;
