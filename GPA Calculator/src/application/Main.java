@@ -40,7 +40,7 @@ public class Main extends Application {
 		Parent root8 = FXMLLoader.load(getClass().getResource("/FXMLDocs/McMaster.fxml")); 
 		Parent root9 = FXMLLoader.load(getClass().getResource("/FXMLDocs/Ottawa.fxml")); 
 		Parent root10 = FXMLLoader.load(getClass().getResource("/FXMLDocs/Queens.fxml"));
-		Parent root11 = FXMLLoader.load(getClass().getResource("/FXMLDocs/Sheriden.fxml"));
+		Parent root11 = FXMLLoader.load(getClass().getResource("/FXMLDocs/ryerson.fxml"));
 		Parent root12 = FXMLLoader.load(getClass().getResource("/FXMLDocs/UofT.fxml"));
 		Parent root13 = FXMLLoader.load(getClass().getResource("/FXMLDocs/Waterloo.fxml"));
 		Parent root14 = FXMLLoader.load(getClass().getResource("/FXMLDocs/Western.fxml"));

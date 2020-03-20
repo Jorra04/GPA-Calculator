@@ -14,9 +14,15 @@ import javafx.scene.layout.AnchorPane;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class SheridenController {
+public class ryersonController {
 	@FXML
 	private AnchorPane mainPane;
+	@FXML
+	private AnchorPane creditPane;
+	@FXML
+	private AnchorPane coursesPane;
+	@FXML
+	private AnchorPane gradesPane;
 	@FXML
 	private TextField course1;
 
@@ -902,16 +908,14 @@ public class SheridenController {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
-		int count = 0;
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(TextField.class)) {
-		    	((TextField)node).setText("");
-		    }
+		for (Node node : coursesPane.getChildren()) {
+			((TextField)node).setText("");
 		}
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(SplitMenuButton.class)) {
-		    	((SplitMenuButton)node).setText("Grade");
-		    }
+		for (Node node : creditPane.getChildren()) {
+		    ((TextField)node).setText("");
+		}
+		for (Node node : gradesPane.getChildren()) {
+		    ((SplitMenuButton)node).setText("Grade");
 		}
 		
 	}

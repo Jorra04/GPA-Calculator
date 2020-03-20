@@ -2520,7 +2520,7 @@ public class carletonController {
 	}
 	@FXML
 	protected void compute(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			totalCreds+= gradePointArray[i];
 //			System.out.println("GP: " + gradePointArray[i]);
 //			System.out.println(gradeArray[i]);
@@ -2602,19 +2602,18 @@ public class carletonController {
 	}
 	@FXML
 	protected void clearAll(ActionEvent event) {
-		for(int i = 0; i < 17; i ++) {
+		for(int i = 0; i < 40; i ++) {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(TextField.class)) {
-		    	((TextField)node).setText("");
-		    }
+		for (Node node : coursesPane.getChildren()) {
+			((TextField)node).setText("");
 		}
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(SplitMenuButton.class)) {
-		    	((SplitMenuButton)node).setText("Grade");
-		    }
+		for (Node node : creditPane.getChildren()) {
+		    ((TextField)node).setText("");
+		}
+		for (Node node : gradesPane.getChildren()) {
+		    ((SplitMenuButton)node).setText("Grade");
 		}
 		
 	}

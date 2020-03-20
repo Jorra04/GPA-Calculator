@@ -2549,16 +2549,14 @@ public class guelphController {
 			gradePointArray[i] = 0;
 			gradeArray[i] = 0;
 		}
-		int count = 0;
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(TextField.class)) {
-		    	((TextField)node).setText("");
-		    }
+		for (Node node : coursesPane.getChildren()) {
+			((TextField)node).setText("");
 		}
-		for (Node node : mainPane.getChildren()) {
-		    if(node.getClass().equals(SplitMenuButton.class)) {
-		    	((SplitMenuButton)node).setText("Grade");
-		    }
+		for (Node node : creditPane.getChildren()) {
+		    ((TextField)node).setText("");
+		}
+		for (Node node : gradesPane.getChildren()) {
+		    ((SplitMenuButton)node).setText("Grade");
 		}
 		
 	}
